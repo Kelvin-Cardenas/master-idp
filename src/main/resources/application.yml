@@ -19,6 +19,7 @@ spring:
       data-source-properties:
         ssl: true
         sslmode: require
+        prepareThreshold: 0
 
   jpa:
     hibernate:
