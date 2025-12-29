@@ -1,26 +1,14 @@
 server:
-  port: ${PORT:8080}
+  port: ${PORT}
 
 spring:
-  application:
-    name: prueba-app
-
   datasource:
-    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/prueba_db}
-    username: ${PGUSER:postgres}
-    password: ${PGPASSWORD:postgres}
+    url: ${DATABASE_URL}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
     driver-class-name: org.postgresql.Driver
 
   jpa:
-    open-in-view: false
     hibernate:
       ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-
-logging:
-  level:
-    org.hibernate.SQL: debug
+    show-sql: false
