@@ -1,9 +1,6 @@
 package org.example.prueba.menber.controller;
 
 
-
-
-
 import org.example.prueba.menber.dto.EventRegistrationRequest;
 import org.example.prueba.menber.dto.EventRegistrationResponse;
 import org.example.prueba.menber.service.EventRegistrationService;
@@ -11,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+@CrossOrigin(origins = "*")
 
 @RestController
 @RequestMapping("/api/event-registrations")
