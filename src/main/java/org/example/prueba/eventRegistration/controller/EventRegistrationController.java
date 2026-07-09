@@ -1,9 +1,10 @@
-package org.example.prueba.menber.controller;
+package org.example.prueba.eventRegistration.controller;
 
 
-import org.example.prueba.menber.dto.EventRegistrationRequest;
-import org.example.prueba.menber.dto.EventRegistrationResponse;
-import org.example.prueba.menber.service.EventRegistrationService;
+import jakarta.validation.Valid;
+import org.example.prueba.eventRegistration.dto.EventRegistrationRequest;
+import org.example.prueba.eventRegistration.dto.EventRegistrationResponse;
+import org.example.prueba.eventRegistration.service.EventRegistrationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,7 +22,7 @@ public class EventRegistrationController {
     }
 
     @PostMapping
-    public ResponseEntity<EventRegistrationResponse> create(@RequestBody EventRegistrationRequest request) {
+    public ResponseEntity<EventRegistrationResponse> create( @Valid @RequestBody EventRegistrationRequest request) {
         return ResponseEntity.ok(service.create(request));
     }
 
@@ -43,6 +44,7 @@ public class EventRegistrationController {
 
     @GetMapping
     public ResponseEntity<List<EventRegistrationResponse>> listAll() {
+
         return ResponseEntity.ok(service.listAll());
     }
 
@@ -51,4 +53,7 @@ public class EventRegistrationController {
         service.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+
+
 }

@@ -1,4 +1,4 @@
-package org.example.prueba.menber.entity;
+package org.example.prueba.eventRegistration.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

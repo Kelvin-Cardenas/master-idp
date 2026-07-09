@@ -1,12 +1,12 @@
-package org.example.prueba.menber.service;
+package org.example.prueba.eventRegistration.service;
 
 
 
 import org.example.prueba.mapper.EventRegistrationMapper;
-import org.example.prueba.menber.dto.EventRegistrationRequest;
-import org.example.prueba.menber.dto.EventRegistrationResponse;
-import org.example.prueba.menber.entity.EventRegistration;
-import org.example.prueba.menber.repository.EventRegistrationRepository;
+import org.example.prueba.eventRegistration.dto.EventRegistrationRequest;
+import org.example.prueba.eventRegistration.dto.EventRegistrationResponse;
+import org.example.prueba.eventRegistration.entity.EventRegistration;
+import org.example.prueba.eventRegistration.repository.EventRegistrationRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -1,8 +1,8 @@
 package org.example.prueba.mapper;
 
-import org.example.prueba.menber.dto.EventRegistrationRequest;
-import org.example.prueba.menber.dto.EventRegistrationResponse;
-import org.example.prueba.menber.entity.EventRegistration;
+import org.example.prueba.eventRegistration.dto.EventRegistrationRequest;
+import org.example.prueba.eventRegistration.dto.EventRegistrationResponse;
+import org.example.prueba.eventRegistration.entity.EventRegistration;
 
 public class EventRegistrationMapper{
 

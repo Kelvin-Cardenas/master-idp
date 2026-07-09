@@ -1,4 +1,4 @@
-package org.example.prueba.menber.dto;
+package org.example.prueba.eventRegistration.dto;
 
 import lombok.Getter;
 import lombok.Setter;

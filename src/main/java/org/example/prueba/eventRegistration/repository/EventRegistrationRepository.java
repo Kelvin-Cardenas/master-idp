@@ -1,7 +1,7 @@
-package org.example.prueba.menber.repository;
+package org.example.prueba.eventRegistration.repository;
 
 
-import org.example.prueba.menber.entity.EventRegistration;
+import org.example.prueba.eventRegistration.entity.EventRegistration;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

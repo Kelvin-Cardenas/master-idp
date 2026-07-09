@@ -1,8 +1,8 @@
-package org.example.prueba.menber.service;
+package org.example.prueba.eventRegistration.service;
 
 
-import org.example.prueba.menber.dto.EventRegistrationRequest;
-import org.example.prueba.menber.dto.EventRegistrationResponse;
+import org.example.prueba.eventRegistration.dto.EventRegistrationRequest;
+import org.example.prueba.eventRegistration.dto.EventRegistrationResponse;
 
 import java.util.List;
 
