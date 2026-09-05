@@ -2,6 +2,7 @@ package org.example.prueba.members.service;
 
 import org.example.prueba.members.dto.MembersRequest;
 import org.example.prueba.members.dto.MembersResponseDto;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 

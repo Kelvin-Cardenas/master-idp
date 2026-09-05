@@ -7,6 +7,7 @@ import org.example.prueba.members.dto.MembersRequest;
 import org.example.prueba.members.dto.MembersResponseDto;
 import org.example.prueba.members.entity.MembersCh;
 import org.example.prueba.members.repository.MembersRepository;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -46,6 +47,9 @@ public class MembersServiceImpl implements MembersService{
     @Override
     public void deleteMember(Long id) {
 
+        membersRepository.deleteById(id);
+
+
     }
 
     @Override
@@ -57,5 +61,10 @@ public class MembersServiceImpl implements MembersService{
     public List<MembersResponseDto> listAllMember() {
         return membersRepository.findAll().stream()
                 .map(MembersMapper::toDTOMembers)
-                .toList();    }
+                .toList();
+    }
+
+
+
+
 }
